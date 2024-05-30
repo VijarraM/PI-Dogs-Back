@@ -8,7 +8,7 @@ const findAllDogs = async () => {
 
   const detailedDogs = dogs.map((dog) => {
     const temperamentArray = dog.temperament?.split(', ').map((temperament) => ({ name: temperament }));
-
+    // console.log();
     return {
       id: dog.id,
       name: dog.name,
